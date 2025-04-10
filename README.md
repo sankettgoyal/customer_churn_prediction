@@ -4,107 +4,112 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-yellow.svg)
 ![Status](https://img.shields.io/badge/Project-Complete-brightgreen.svg)
 
-Predict customer churn with machine learning! This project uses real-world telecom customer data to train, evaluate, and deploy a predictive model to identify customers likely to churn. Perfect for data science portfolios, machine learning learners, and churn analysis case studies.
+Predict customer churn with machine learning using telecom user data. This project identifies which customers are likely to leave a service provider, helping businesses improve customer retention. Perfect for your data science portfolio and real-world business case scenarios.
 
 ---
 
 ## 🚀 Project Overview
 
-**Customer churn** refers to when customers stop doing business with a company. Reducing churn is vital for businesses to retain revenue and improve services. This project:
-- Analyzes customer behavior data.
-- Applies data preprocessing & feature engineering.
-- Implements classification models (Logistic Regression, Random Forest, etc.).
-- Evaluates models using accuracy, precision, recall, and F1 score.
-- Identifies top features contributing to churn.
+Customer churn prediction helps businesses understand why users leave and what patterns lead to it. This repository demonstrates:
+- Data cleaning and preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature engineering
+- Model training and evaluation using multiple algorithms
+- Performance comparison & feature importance
 
 ---
 
 ## 📊 Dataset
 
-The dataset contains **demographic**, **account**, and **usage data** of telecom users, with a `Churn` column as the target.
-
-| Feature | Description |
-|--------|-------------|
-| gender | Customer gender |
-| tenure | Duration of service |
-| MonthlyCharges | Monthly bill |
-| TotalCharges | Lifetime bill amount |
-| InternetService | Type of internet |
-| ... | and more |
+The dataset includes customer demographics, service usage, and billing data, with a target variable `Churn`.
 
 > 📂 **Source**: [Telco Customer Churn Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)
 
 ---
 
-## 🧪 Models Used
+## 📈 Algorithms Used
 
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- Support Vector Machine (SVM)
-- Gradient Boosting
+- Logistic Regression  
+- Decision Tree Classifier  
+- Random Forest Classifier  
+- Support Vector Machine (SVM)  
+- Gradient Boosting (XGBoost, CatBoost)
 
-All models are compared using metrics like:
-- Accuracy
-- Confusion Matrix
-- ROC-AUC Score
+All models are evaluated using metrics like:
+- Accuracy  
+- Precision, Recall, F1 Score  
+- ROC-AUC Score  
+- Confusion Matrix  
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Tool | Purpose |
-|------|---------|
-| **Python** | Programming language |
-| **Pandas / NumPy** | Data manipulation |
-| **Matplotlib / Seaborn** | Data visualization |
-| **Scikit-learn** | Machine learning |
-| **Jupyter Notebook** | Exploratory development |
+**Languages & Tools**:  
+`Python, Jupyter Notebook, Git, GitHub`
+
+**Libraries**:  
+`Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost, CatBoost, Plotly, Missingno`
 
 ---
 
-## 📈 Results
+## 📂 Repository Structure
 
-- Achieved up to **84% accuracy** with Random Forest.
-- Identified key churn drivers: contract type, monthly charges, internet service.
-- Visualized churn vs. tenure, service type, and charges.
-
----
-
-## 📌 Key Learnings
-
-- Importance of data preprocessing (handling missing values, encoding).
-- Model selection & hyperparameter tuning.
-- Interpretation of classification metrics.
-- Feature importance analysis.
+```
+customer_churn_prediction/
+│
+├── customer-churn-prediction.ipynb     # Main analysis notebook
+├── requirements.txt                    # Project dependencies
+├── README.md                           # Project documentation
+└── .gitignore
+```
 
 ---
 
-## 🧠 Use Cases
+## 🖥️ How to Run
 
-- Telecom customer retention strategy.
-- Churn risk scoring system.
-- Marketing campaign targeting churn-prone users.
+```bash
+# Clone the repository
+git clone https://github.com/sankettgoyal/customer_churn_prediction.git
+cd customer_churn_prediction
 
----
+# Create virtual environment (optional)
+python -m venv venv
+source venv/bin/activate  # For Windows: venv\Scripts\activate
 
-## 💡 Future Improvements
+# Install dependencies
+pip install -r requirements.txt
 
-- Hyperparameter tuning with GridSearchCV
-- Try XGBoost / CatBoost
-- Deploy as a web app using Flask/Streamlit
-- Real-time churn prediction on streaming data
-
----
-
-## 📬 Contact
-
-For questions or feedback:
-
-**Sanket Goyal**
-📍 Nagpur, Maharashtra, India  
-🌐 [LinkedIn](https://www.linkedin.com/in/sankettgoyal/) 
+# Run Jupyter Notebook
+jupyter notebook customer-churn-prediction.ipynb
+```
 
 ---
 
-`#CustomerChurnPrediction` `#MachineLearningProject` `#ChurnModel` `#PythonML` `#TelcoData` `#ChurnAnalysis` `#DataSciencePortfolio` `#CustomerRetention` `#LogisticRegression` `#RandomForestClassifier`
+## ✅ Results & Insights
+
+- Best performing model: **Random Forest** with ~84% accuracy  
+- Key churn indicators: Contract Type, Monthly Charges, Internet Service  
+- Visual insights via heatmaps, histograms, and ROC curves  
+
+---
+
+## 📌 Future Scope
+
+- Hyperparameter tuning using GridSearchCV  
+- Model deployment using Streamlit or Flask  
+- Automate predictions on new incoming data  
+- Integrate SHAP or LIME for explainability  
+
+---
+
+## 📬 Connect With Me
+
+**Sanket Goyal** 
+🔗 [GitHub](https://github.com/sankettgoyal) | [LinkedIn](https://www.linkedin.com/in/sankettgoyal)
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
