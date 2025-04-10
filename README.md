@@ -97,12 +97,6 @@ All models are compared using metrics like:
 
 ---
 
-## 🔍 SEO Tags
-
-`#CustomerChurnPrediction` `#MachineLearningProject` `#ChurnModel` `#PythonML` `#TelcoData` `#ChurnAnalysis` `#DataSciencePortfolio` `#CustomerRetention` `#LogisticRegression` `#RandomForestClassifier`
-
----
-
 ## 📬 Contact
 
 For questions or feedback:
@@ -112,3 +106,5 @@ For questions or feedback:
 🌐 [LinkedIn](https://www.linkedin.com/in/sankettgoyal/) 
 
 ---
+
+`#CustomerChurnPrediction` `#MachineLearningProject` `#ChurnModel` `#PythonML` `#TelcoData` `#ChurnAnalysis` `#DataSciencePortfolio` `#CustomerRetention` `#LogisticRegression` `#RandomForestClassifier`
